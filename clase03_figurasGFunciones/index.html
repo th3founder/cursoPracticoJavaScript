@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas con Funciones</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras Geométricas</h1>
+    </header>
+    <section>
+        <p>Calcula el área y perímetro de un Cuadrado</p>
+        <form action="">
+            <label for="inputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
+            <input id="inputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+        </form>
+    </section>
+
+    <section></section>
+        <p>Tríangulo</p>
+        <form action="">
+            <label for="inputTrianguloLado1">Lado1:</label>
+            <input id="inputTrianguloLado1" type="number">
+            <label for="inputTrianguloLado2">Lado2:</label>
+            <input id="inputTrianguloLado2" type="number">
+            <label for="inputTrianguloBase">Base:</label>
+            <input id="inputTrianguloBase" type="number">
+            <label for="inputTrianguloHeight">Altura:</label>
+            <input id="inputTrianguloHeight" type="number">
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+        </form>
+    </section>
+
+    <section>
+        <p>Circulo</p>
+        <form action="">
+            <label for="inputCirculo">Circulo</label>
+            <input id="inputCirculo" type="number">
+            <button type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+        </form>
+    </section>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
