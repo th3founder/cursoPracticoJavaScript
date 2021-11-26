@@ -146,3 +146,24 @@ function calcularAreaCirculo(){
 }
 
 
+/* Triangulo Isoceles */
+function obtenerAlturaTriangulo(){
+    const input1 = document.getElementById("inputTrianguloILado1");
+    const lado1 = Number(input1.value);
+
+    const input2 = document.getElementById("inputTrianguloILado2");
+    const lado2 = Number(input2.value);
+
+    const input3 = document.getElementById("inputTrianguloIBase");
+    const base = Number(input3.value);
+
+    if (lado1 === lado2 && lado1 != base) {
+        console.log("Isoceles");
+        const altura = Math.sqrt((lado1*lado2)-((base*base)/4));
+        console.log(altura);
+
+    }else{
+        console.log("Alguno de los datos coinciden y no permite que se ejecute la operación del Isoceles");
+    }
+
+}
