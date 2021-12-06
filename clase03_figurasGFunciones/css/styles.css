@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+input{
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    padding-left: 1rem;
+}
+select{
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+
+}
+
+/* Header section */
+header{
+    background-color: #191D32;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header i{
+    font-size: 2.5rem;
+    color: #61E786;
+    margin: 0 2rem ;
+}
+
+header p{
+    font-size: 18px;
+    color: #EDFFEC;
+    font-weight: 600;
+}
+
+header p span{
+    border-bottom: 1px solid red;
+}
+/* Section instrucciones */
+.math-instructions{
+    width: 100%;
+    background-color: #F7F7FF;
+    border: 2px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.math-instructions h2{
+    padding: 1rem 2rem;
+    font-size: 13px;
+    font-weight:400;
+
+}
+
+/* Main section------------------- */
+main{
+    width: 100%;
+    background-color: #F7F7FF;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* section cuadrado */
+.cuadrado{
+    background-color: #F2DC5D;
+    border-radius: 10px;
+    width: 80%;
+    height: 250px;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cuadrado div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 1rem 0 0.5rem;
+}
+
+.cuadrado div i,p{
+    font-weight: 600;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.cuadrado form{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadrado form .for-instruction{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    padding-right: 3rem;
+}
+
+.cuadrado form div{
+    margin-top: 0rem;
+    margin-bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuadrado form div input,select{
+    height: 25px;
+}
+
+.cuadrado form div input{
+    margin-left: 1rem;
+    background-color: #faeda3;
+}
+
+.cuadrado form div select{
+    margin-right: 2rem;
+    background-color: #F2DC5D;
+
+}
+
+main .cuadrado .inputCuadrado-buttons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+main .cuadrado .inputCuadrado-buttons button{
+    border: none;
+    padding: 1rem;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+main .cuadrado .inputCuadrado-buttons button:hover{
+    background-color: whitesmoke;
+}
+
+main .cuadrado .answer{
+    background-color: white;
+    height: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/* Triangulo----------------------- */
+.triangulo{
+    background-color: #473BF0;
+    border-radius: 10px;
+    width: 80%;
+    height: 300px;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.triangulo .triangulo-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.triangulo .triangulo-title p{
+    font-weight: 600;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+.triangulo .triangulo-title i{
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    color: whitesmoke;
+}
+
+.triangulo .form-triangulo{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.triangulo .form-triangulo .form-triangulo-div{
+    margin: 0 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    height: 30px;
+}
+
+.triangulo .form-triangulo .form-triangulo-div label{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    
+}
+.triangulo .form-triangulo .form-triangulo-div input{
+    width: 80%;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.triangulo .form-triangulo .for-instruction{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.triangulo .form-triangulo .form-triangulo-div input{
+    background-color: #bab6e6;
+    width: 100%;
+}
+
+.triangulo .form-triangulo .form-triangulo-tipoDato{
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangulo .form-triangulo .form-triangulo-tipoDato select{
+    background-color: #473BF0;
+    color: white;
+    padding: 0 0.5rem;
+}
+
+.triangulo .form-triangulo .inputTriangulo-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.triangulo .form-triangulo .inputTriangulo-buttons button{
+    border: none;
+    padding: 0.7rem;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    background-color: #473BF0;
+    border: 1px solid white;
+    color: white;
+
+}
+
+.triangulo .inputTriangulo-buttons button:hover{
+    background-color: whitesmoke;
+    color: #473BF0;
+    border: none;
+}
+
+.triangulo .answer{
+    margin-top: 1rem;
+    background-color: white;
+    height: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+
+} 
+
+/* Circulo..................... */
+.circulo{
+    background-color: #61E786;
+    border-radius: 10px;
+    width: 80%;
+    height: 250px;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.circulo .circulo-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.circulo .circulo-title p{
+    font-weight: 600;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+.circulo .circulo-title i{
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    color: whitesmoke;
+}
+
+
+
+.circulo .form-Circulo{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.circulo .form-Circulo .for-instruction{
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    padding-right: 3rem;
+
+}
+
+.circulo .form-Circulo .inputCirculo{
+    margin-top: 0rem;
+    margin-bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*  */
+
+
+.circulo .form-Circulo .inputCirculo input,select{
+    height: 25px;
+}
+
+.circulo .form-Circulo .inputCirculo input{
+    margin-left: 1rem;
+    background-color: #d9e6dc;
+}
+
+.circulo .form-Circulo .inputCirculo select{
+    margin-right: 2rem;
+    background-color: #61E786;
+    font-weight: 500;
+}
+
+/*  */
+main .cuadrado .inputCuadrado-buttons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.circulo .form-Circulo .inputCirculo-buttons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.circulo .form-Circulo .inputCirculo-buttons button{
+    border: none;
+    padding: 0.8rem;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.circulo .form-Circulo .inputCirculo-buttons button button:hover{
+    background-color: whitesmoke;
+}
+
+.circulo .answer{
+    background-color: white;
+    height: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Triangulo isoceles */
+.trianguloIsoceles{
+    background-color: #191D32;
+    border-radius: 10px;
+    width: 80%;
+    height: 300px;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.trianguloIsoceles .trianguloIsoceles-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.trianguloIsoceles .trianguloIsoceles-title p{
+    font-weight: 600;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.trianguloIsoceles .trianguloIsoceles-title i{
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: whitesmoke;
+}
+
+.trianguloIsoceles .trianguloIsoceles-form{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.trianguloIsoceles .trianguloIsoceles-form .for-instruction{
+width: 100%;
+font-weight: 600;
+font-size: 1.3rem;
+margin-left: 1rem;
+padding-right: 3rem;
+color: white;
+
+}
+.trianguloIsoceles .trianguloIsoceles-form  .form-trianguloIsoceles{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.trianguloIsoceles .trianguloIsoceles-form  .form-trianguloIsoceles label{
+    color: white;
+    margin: 0.3rem 0 0.1rem 1rem;
+}
+
+.trianguloIsoceles .trianguloIsoceles-form  .form-trianguloIsoceles input{
+    width: 90%;
+    margin-left: 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.trianguloIsoceles .trianguloIsoceles-form .trianguloIsoceles-form__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.trianguloIsoceles .trianguloIsoceles-form .trianguloIsoceles-form__buttons button{
+    width: 60%;
+    border: none;
+    padding: 0.6rem;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.trianguloIsoceles .trianguloIsoceles-form button .trianguloIsoceles-form__buttons button:hover{
+    background-color: whitesmoke;
+}
+
+.trianguloIsoceles .trianguloIsoceles-form .trianguloIsoceles-form__buttons select{
+    background-color: #191D32;
+    color: white;
+}
+
+.trianguloIsoceles .answer{
+    background-color: white;
+    height: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+}
