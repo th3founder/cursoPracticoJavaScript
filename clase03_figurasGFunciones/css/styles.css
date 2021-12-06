@@ -470,6 +470,7 @@ color: white;
     width: 90%;
     margin-left: 1rem;
     padding: 0.5rem 0 0.5rem 0;
+    padding-left: 1rem;
 }
 
 .trianguloIsoceles .trianguloIsoceles-form .trianguloIsoceles-form__buttons{
@@ -503,4 +504,5 @@ color: white;
     height: 20px;
     text-align: center;
     font-size: 1.4rem;
+    
 }

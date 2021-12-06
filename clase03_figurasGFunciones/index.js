@@ -104,6 +104,8 @@ function calcularAreaCuadrado(){
 
 /* Triangulo */
 function calcularPerimetroTriangulo(){
+    const units = document.getElementById("tipoDatoT").value
+
     const input1 = document.getElementById("inputTrianguloLado1");
     const lado1 = Number(input1.value);
 
@@ -115,12 +117,16 @@ function calcularPerimetroTriangulo(){
 
     const perimetro = perimetroTriangulo(lado1,lado2,base);
 
+    console.log(units);
+    console.log(perimetro,units);
+    document.getElementById("answerT").innerHTML =`${perimetro} ${units}`;
 
-    console.log(perimetro);
 
 }
 
 function calcularAreaTriangulo(){
+    const units = document.getElementById("tipoDatoT").value
+
     const input3 = document.getElementById("inputTrianguloBase");
     const base = Number(input3.value);
 
@@ -131,32 +137,43 @@ function calcularAreaTriangulo(){
     const area = areaTriangulo(base,altura);
 
     console.log(area);
+    document.getElementById("answerT").innerHTML =`${area} ${units}^2`;
+
 }
 
 
 /* Circulo */
 
 function calcularPerimetroCirculo(){
+    const units = document.getElementById("tipoDatoC").value
     const input = document.getElementById("inputCirculo");
     const value = Number(input.value);
 
     const perimetro = perimetroCirculo(value)
     console.log(perimetro);
 
+    document.getElementById("answerC").innerHTML =`${perimetro} ${units}`;
+
 }
 
 
 function calcularAreaCirculo(){
+    const units = document.getElementById("tipoDatoC").value
+
     const input = document.getElementById("inputCirculo");
     const value = Number(input.value);
 
     const area = areaCirculo(value);
     console.log(area);
+    document.getElementById("answerC").innerHTML =`${area} ${units}^2`;
+
 }
 
 
 /* Triangulo Isoceles */
 function obtenerAlturaTriangulo(){
+    const units = document.getElementById("tipoDatoTI").value
+
     const input1 = document.getElementById("inputTrianguloILado1");
     const lado1 = Number(input1.value);
 
@@ -170,6 +187,8 @@ function obtenerAlturaTriangulo(){
         console.log("Isoceles");
         const altura = Math.sqrt((lado1*lado2)-((base*base)/4));
         console.log(altura);
+        document.getElementById("answerTI").innerHTML =`${altura} ${units}^2`;
+
 
     }else{
         alert("Alguno de los datos coinciden y no permite que se ejecute la operación del Isoceles");
