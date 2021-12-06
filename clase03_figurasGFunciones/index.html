@@ -5,59 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geométricas con Funciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Figuras Geométricas</h1>
+        <i class="fas fa-square-root-alt"></i>
+        <p>Geometry <span>Devs</span></p>
     </header>
-    <section>
-        <p>Calcula el área y perímetro de un Cuadrado</p>
-        <form action="">
-            <label for="inputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
-            <input id="inputCuadrado" type="number">
-            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
-            <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
-        </form>
+    <!-- ------------------------------------------------ -->
+    <section class="math-instructions">
+        <h2>🖖Hola habla Lisa 🤖, ingresa los valores para calcular las figuras Geométricas</h2>
     </section>
+    <!-- ------------------------------------------------ -->
+    <main>
+        <section class="cuadrado"> 
+            <div class="cuadrado-title">
+                <i class="far fa-square"></i>
+                <p>Cuadrado</p>
+            </div>
+            <form action="">
+                <label for="inputCuadrado" class="for-instruction">Cúanto mide los lados de tu cuadrado?</label>
+                <div class="inputCuadrado">
+                    <input id="inputCuadrado" type="number">
+                    <select name="dato" id="tipoDato">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                        <option value="in">in</option>
+                    </select>
+                </div>
+                <div class="inputCuadrado-buttons">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>    
+                </div>
+            </form>
+            <label for="inputCuadrado" class="answer"  id="answerbox">🖖Hola</label>
+        </section>
+        
+<!-- Triangulo........................ -->
+        <section class="triangulo">
+            <div class="triangulo-title">
+                <i class="fas fa-caret-up"></i>
+                <p>Tríangulo</p>
+            </div>
+            <form action="" class="form-triangulo">
+                <label for="inputTriangulo" class="for-instruction">Cúanto mide los lados de tu Triangulo?</label>
+                <div class="form-triangulo-div">
+                    <label for="inputTrianguloLado1">Lado1:</label>
+                    <input id="inputTrianguloLado1" type="number">    
+                </div>
+                <div class="form-triangulo-div">
+                    <label for="inputTrianguloLado2">Lado2:</label>
+                    <input id="inputTrianguloLado2" type="number">    
+                </div>
+                <div class="form-triangulo-div">
+                    <label for="inputTrianguloBase">Base:</label>
+                    <input id="inputTrianguloBase" type="number">    
+                </div>
+                <div class="form-triangulo-div">
+                    <label for="inputTrianguloHeight">Altura:</label>
+                    <input id="inputTrianguloHeight" type="number">    
+                </div>
+                <div class="form-triangulo-tipoDato">
+                    <select name="dato" id="tipoDato">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                        <option value="in">in</option>
+                    </select>
+                </div>
+                <div class="inputTriangulo-buttons">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+                    <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>    
+                </div>
+            </form>
+            <label for="inputTriangulo" class="answer"  id="answerT">🖖Hola</label>
+        </section>
+    
+    <!-- Circulo.................. -->
+        <section class="circulo" >
+            <div class="circulo-title">
+                <i class="far fa-circle"></i>
+                <p>Circulo</p>
+            </div>
 
-    <section></section>
-        <p>Tríangulo</p>
-        <form action="">
-            <label for="inputTrianguloLado1">Lado1:</label>
-            <input id="inputTrianguloLado1" type="number">
-            <label for="inputTrianguloLado2">Lado2:</label>
-            <input id="inputTrianguloLado2" type="number">
-            <label for="inputTrianguloBase">Base:</label>
-            <input id="inputTrianguloBase" type="number">
-            <label for="inputTrianguloHeight">Altura:</label>
-            <input id="inputTrianguloHeight" type="number">
-            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
-            <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
-        </form>
+            <form action="" class="form-Circulo">
+                <label for="inputCirculo" class="for-instruction">Cúanto mide el radio del Circulo?</label>
+                <div class="inputCirculo">
+                    <input id="inputCirculo" type="number">
+                    <select name="dato" id="tipoDato">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                        <option value="in">in</option>
+                    </select>
+                </div>
+                <div class="inputCirculo-buttons">
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>    
+                </div>
+            </form>
+            <label for="inputCirculo" class="answer"  id="answerbox">🖖Hola</label>
+        </section>
+        <!-- Triangulo Isoceles -->
+        <section class="trianguloIsoceles">
+            <div class="trianguloIsoceles-title">
+                <i class="fas fa-hat-cowboy-side"></i>
+                <p>Tríangulo Isoceles</p>
+            </div>
+            <form action="" class="trianguloIsoceles-form">
+                <label for="trianguloIsoceles" class="for-instruction">Cúanto mide los lados de tu Triangulo Isoceles?</label>
+                <div class="form-trianguloIsoceles">
+                    <label for="inputTrianguloILado1">Lado1:</label>
+                    <input id="inputTrianguloILado1" type="number">
+                    <label for="inputTrianguloILado2">Lado2:</label>
+                    <input id="inputTrianguloILado2" type="number">
+                    <label for="inputTrianguloIBase">Base:</label>
+                    <input id="inputTrianguloIBase" type="number">    
+                </div>
+                <div class="trianguloIsoceles-form__buttons">
+                    <button type="button" onclick="obtenerAlturaTriangulo()">Calcular la altura</button>
+                    <select name="dato" id="tipoDato">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                        <option value="in">in</option>
+                    </select>
+
+                </div>
+            </form>
+            <label for="inputCirculo" class="answer"  id="answerbox">🖖Hola</label>
+        </section>
+    </main>
+
+
+        <section></section>
     </section>
-
-    <section>
-        <p>Circulo</p>
-        <form action="">
-            <label for="inputCirculo">Circulo</label>
-            <input id="inputCirculo" type="number">
-            <button type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
-            <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
-        </form>
-    </section>
-
-    <section></section>
-    <p>Tríangulo Isoceles</p>
-    <form action="">
-        <label for="inputTrianguloILado1">Lado1:</label>
-        <input id="inputTrianguloILado1" type="number">
-        <label for="inputTrianguloILado2">Lado2:</label>
-        <input id="inputTrianguloILado2" type="number">
-        <label for="inputTrianguloIBase">Base:</label>
-        <input id="inputTrianguloIBase" type="number">
-        <button type="button" onclick="obtenerAlturaTriangulo()">Calcular la altura</button>
-    </form>
-</section>
 
 
     

@@ -79,17 +79,26 @@ console.groupEnd();
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
-
+    const units = document.getElementById("tipoDato").value
     const perimetro = perimetroCuadrado(value)
 
     console.log(perimetro);
+    console.log(units)
+    document.getElementById("answerbox").innerHTML =`${perimetro} ${units}`;
 }
 
 function calcularAreaCuadrado(){
     const input = document.getElementById("inputCuadrado");
+    const units = document.getElementById("tipoDato").value
     const value = input.value;
     const area = areaCuadrado(value);
     console.log(area);
+    console.log(units)
+
+    const perimetro = perimetroCuadrado(value)
+
+    document.getElementById("answerbox").innerHTML =`${area} ${units}^2`;
+
 }
 
 
@@ -163,7 +172,7 @@ function obtenerAlturaTriangulo(){
         console.log(altura);
 
     }else{
-        console.log("Alguno de los datos coinciden y no permite que se ejecute la operación del Isoceles");
+        alert("Alguno de los datos coinciden y no permite que se ejecute la operación del Isoceles");
     }
 
 }
