@@ -522,3 +522,94 @@ footer p{
 footer p:hover{
     color: white;
 }
+
+/* Querys......... */
+/* @Querys responsive desing */
+
+
+
+/* Ipad 768px */
+@media only screen and (min-width: 768px) {
+    header{
+        height: 9vh;
+    }
+
+    header i{
+        font-size: 5rem;
+    }
+    header p{
+        font-size: 3xrem;
+    }
+
+    .math-instructions{
+        height: 5vh;
+        align-items: center;
+    }
+
+    .math-instructions h2{
+        font-size: 2rem;
+    }
+
+    main{
+        background-color: rgb(58, 58, 58);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        height: 85vh;
+    }
+
+    main .cuadrado,.triangulo,.circulo,.trianguloIsoceles{
+        width: 330px;
+        height: 350px;
+        margin: 5rem 1rem;
+    }
+
+
+    /* Cuadrado responsive */
+    main .cuadrado .cuadrado-title i,p{
+        font-size: 2rem;
+    }
+
+    main .cuadrado form .for-instruction{
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+
+    .cuadrado .inputCuadrado{
+        margin: 1rem 0;
+    }
+
+    .cuadrado .inputCuadrado input{
+        margin-left: 2rem;
+        width: 220px;
+        height: 40px;
+    }
+    .cuadrado .inputCuadrado select{
+        margin-right: 3rem;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 1020px) {
+    header i{
+        font-size: 3rem;
+    }
+    .math-instructions{
+        align-items: center;
+        height: 60px;
+    }
+    main{
+        height: 600px;
+        height: 80vh;
+    }
+    main .cuadrado,.triangulo,.circulo,.trianguloIsoceles{
+        width: 300px;
+        height: 350px;
+        margin: 5rem 1rem;
+    }
+
+}
