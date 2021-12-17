@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;600;800;900&display=swap" rel="stylesheet">
+    <title>Descuentos y porcentajes</title>
+</head>
+<body>
+    <header>
+        <figure class="img-Container"> 
+            <img src="./src/porcentage.svg" alt="" class="img-Container__img">
+            <img src="./src/responsive.svg" alt="" class="img-Container__img2">
+        </figure>
+    </header>
+
+    <main>          
+        <section>
+            <p class="mainTitle">Discount Calculator</p>
+            <p class="mainTitle-intro">A simple discount calculator for any product that you want to buy</p>
+
+            <form action="">
+        
+                <label for="price" >Product Price:</label>
+                <input type="number" id="price" placeholder="$" onchange="onClickButtonPriceDisccount()" >
+                <label for="discount">Discount Percentage:</label>
+                <input type="number" id="discount" placeholder="$" onchange="onClickButtonPriceDisccount()">
+    
+            </form>
+            <div class="mainResults">
+                <p>Savings: $<span id="mainResults-savings" ></span> mx</p>
+                <p>Final Price: $<span id="mainResults-finalP"></span> mx</p>
+            </div>
+    
+        </section>        
+    </main>
+    <footer>
+        <p>Construido con 💚 por Alvaro Ibañez.</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
