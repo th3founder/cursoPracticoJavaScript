@@ -1,4 +1,4 @@
-const PI = Math.PI;
+const PI = Math.PI; //generar numero pi
 
 //Código del Cuadrado----------------------------------------------
 console.group("Cuadrado");

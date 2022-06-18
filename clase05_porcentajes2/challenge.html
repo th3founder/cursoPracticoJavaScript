@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge con cupones</title>
+</head>
+<body>
+    <header>
+        <h1>Whapy Shop Store</h1>
+        <p>Ingresa el articulo con su descuento y descubre si tiene un descuento extra </p>
+    </header>
+    <section>
+        <form action="">
+            <label for="priceProduct">Precio del producto</label>
+            <input type="number" id="priceProduct"  placeholder="0" onchange="products()">
+
+            <label for="discountProduct">Descuento del producto</label>
+            <input type="number" id="discountProduct"  placeholder="0" onchange="products()">
+
+            <label for="couponProduct">¿Tienes algun cupón?</label>
+            <input type="text" id="couponProduct"  placeholder="Escribe la palabra " onchange="products()">
+            
+            <label for="" style="color:red" id="invalidCoupon"></label>
+        </form>
+        <p>El precio final es de:</p>
+        <p id="showPrice" ></p>
+
+        
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>

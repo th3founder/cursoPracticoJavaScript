@@ -18,3 +18,10 @@ Aplicando los conocimientos aprendidos durante el curso de fundamentos y básico
 - Tercer paso: Crear funciones
 - Cuarto paso: Integrar JS con HTML
 
+
+## Tallert #3 Promedio, mediana y moda
+- primer paso: Definir las formulas
+- Segundo paso: Implementar las formulas en javascript
+- Tercer paso: Crear funciones
+- Cuarto paso: Integrar JS con HTML
+
